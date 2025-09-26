@@ -17,5 +17,3 @@ El proyecto también incluye un **Leaderboard** que guarda las puntuaciones en u
 
 ---
 
-## Estructura del proyecto
-
