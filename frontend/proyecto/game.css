@@ -1,0 +1,21 @@
+/* estilos juego - sencillo y limpio */
+body{font-family: Arial, Helvetica, sans-serif; margin:0; background:#eef3f8; color:#222}
+.topbar{display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.title{font-weight:700}
+.hud span{margin-left:12px; font-weight:600}
+
+.game-area{max-width:900px; margin:18px auto; padding:12px}
+canvas{display:block; width:100%; background:linear-gradient(#dff0ff,#fff); border-radius:8px; box-shadow:0 6px 18px rgba(23,139,98,0.06)}
+
+.overlay{position:fixed; inset:0; display:flex; justify-content:center; align-items:center; background:rgba(0,0,0,0.4)}
+.hidden{display:none}
+.modal{background:#fff; padding:18px; border-radius:8px; width:320px; text-align:center}
+.actions{margin:10px 0}
+button{padding:8px 12px; border-radius:8px; border:none; cursor:pointer; background:#21acbb; color:white}
+.saveScoreSection{margin-top:10px}
+input{padding:8px; width:70%; margin-right:6px}
+
+.leaderboard{margin-top:12px; background:#fff; padding:12px; border-radius:8px}
+.leaderboard table{width:100%; border-collapse:collapse}
+.leaderboard th, .leaderboard td{padding:6px 8px; text-align:left}
+.muted{color:#666; font-size:13px}

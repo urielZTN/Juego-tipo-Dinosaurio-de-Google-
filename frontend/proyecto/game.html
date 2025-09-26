@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RunnerJS - Juego</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">RunnerJS</div>
+    <div class="hud">
+      <span id="score">Score: 0</span>
+      <span id="level">Nivel: 1</span>
+      <span id="best">Max: 0</span>
+    </div>
+  </header>
+
+  <main class="game-area">
+    <canvas id="gameCanvas" width="800" height="200"></canvas>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="modal">
+        <h2 id="gameOverTitle">Game Over</h2>
+        <p id="finalScore">Puntaje: 0</p>
+        <p id="finalLevel">Nivel: 1</p>
+        <div class="actions">
+          <button id="restartBtn">Reiniciar</button>
+        </div>
+        <div class="saveScoreSection">
+          <input id="playerName" placeholder="Tu nombre (max 20)" maxlength="20">
+          <button id="saveBtn">Guardar Score</button>
+          <p id="saveMsg" class="muted"></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="leaderboard">
+      <h3>Leaderboard</h3>
+      <div id="leaderboardList">Cargando...</div>
+    </section>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

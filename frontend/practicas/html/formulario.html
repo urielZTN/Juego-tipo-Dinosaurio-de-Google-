@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditación Semántica</title>
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header>
+    <h1 class="fade-in">Meditación Semántica</h1>
+    <p>Conecta mente, cuerpo y código</p>
+  </header>
+
+  <!-- Sección principal con llamada a la acción -->
+  <main>
+    <section class="intro fade-in">
+      <h2>Descubre la calma interior</h2>
+      <p>
+        Aprende a meditar mientras dominas la semántica de HTML5.  
+        Un espacio creado para estudiantes, desarrolladores y buscadores de paz.
+      </p>
+      <button id="openModal">🌸 Suscríbete</button>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Meditación Semántica | Creado con ❤️ en HTML5, CSS3 y JS</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content fade-in">
+      <span id="closeModal" class="close">&times;</span>
+      <h3>Suscríbete al boletín</h3>
+      <form id="formSuscripcion">
+        <input type="email" id="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensaje"></p>
+    </div>
+  </div>
+
+  <!-- Contenedor para el confeti -->
+  <div id="confetti-container"></div>
+
+  <!-- Script -->
+  <script src="../javaScrip/formulario.js"></script>
+</body>
+</html>

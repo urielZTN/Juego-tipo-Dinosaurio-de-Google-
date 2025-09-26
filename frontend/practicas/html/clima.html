@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clima Local</title>
+<link rel="stylesheet" href="../css/clima.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <h1><i class="fas fa-cloud-sun"></i> Clima Local</h1>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Obteniendo tu ubicación...</p>
+    </div>
+
+    <div class="weather-content" id="weather-content" style="display:none;">
+        <div class="location" id="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="city-name">Cargando ubicación...</span>
+        </div>
+
+        <div class="weather-card">
+            <div class="weather-icon" id="weather-icon"></div>
+            <div class="temperature" id="temperature">--°C</div>
+            <div class="description" id="description">Cargando...</div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <i class="fas fa-thermometer-half"></i>
+                    <div class="detail-label">Sensación</div>
+                    <div class="detail-value" id="feels-like">--°C</div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <div class="detail-label">Humedad</div>
+                    <div class="detail-value" id="humidity">--%</div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <div class="detail-label">Viento</div>
+                    <div class="detail-value" id="wind-speed">-- km/h</div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-eye"></i>
+                    <div class="detail-label">Visibilidad</div>
+                    <div class="detail-value" id="visibility">-- km</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error" id="error">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p id="error-message">Ha ocurrido un error</p>
+        <button class="retry-btn" onclick="initializeApp()">Reintentar</button>
+    </div>
+
+    <select id="city-select">
+        <option value="19.43,-99.13">Ciudad de México 🇲🇽</option>
+        <option value="20.67,-103.35">Guadalajara 🇲🇽</option>
+        <option value="25.67,-100.31">Monterrey 🇲🇽</option>
+        <option value="19.20,-96.14">Veracruz 🇲🇽</option>
+        <option value="21.15,-101.68">Querétaro 🇲🇽</option>
+    </select>
+    <button class="select-btn" onclick="searchBySelect()">Ver Clima</button>
+</div>
+
+<script src="../javaScrip/clima.js"></script>
+</body>
+</html>

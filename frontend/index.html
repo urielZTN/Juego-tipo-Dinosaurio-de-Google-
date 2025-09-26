@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Integrador - RunnerJS</title>
+  <link rel="stylesheet" href="proyecto/game.css">
+  <style>
+    /* Estilos basicos del landing para que sea funcional */
+    body{font-family: Arial, Helvetica, sans-serif; margin:0; background:#f4f7fb; color:#222}
+    header{background:#178b62; padding:16px; color:white; display:flex; justify-content:space-between; align-items:center}
+    nav a{color:white; margin:0 10px; text-decoration:none; font-weight:600}
+    .container{max-width:1000px; margin:24px auto; padding:0 16px}
+    .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px}
+    .card{background:white; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .card a{display:block; text-decoration:none; color:#178b62; font-weight:700}
+    .play-btn{display:inline-block; margin-top:8px; padding:8px 12px; background:#21acbb; color:white; border-radius:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>RunnerJS - Proyecto Integrador</strong></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="/practicas">Practicas</a>
+      <a href="#proyecto">Proyecto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="inicio">Bienvenido</h1>
+    <p>Este repositorio contiene tus practicas y el Proyecto Integrador: Juego tipo "Dinosaurio".</p>
+
+    <h2 id="practicas">Practicas</h2>
+    <div class="cards">
+      <div class="card">
+        <div>Ver todas las prácticas</div>
+        <a href="/practicas" target="_blank">Abrir Practicas</a>
+      </div>
+    </div>
+
+    <h2 id="proyecto">Proyecto</h2>
+    <div class="cards" style="margin-top:12px">
+      <div class="card">
+        <div>RunnerJS - Juego Integrador</div>
+        <a class="play-btn" href="proyecto/game.html" target="_blank">Jugar</a>
+        <p style="margin-top:8px">Entrar al juego y leaderboard</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

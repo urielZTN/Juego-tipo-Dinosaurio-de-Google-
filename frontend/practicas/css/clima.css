@@ -1,0 +1,42 @@
+/* Reset y body */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Arial', sans-serif; min-height:100vh; display:flex; justify-content:center; align-items:center; transition:background 0.5s ease; position:relative; overflow:hidden; background: linear-gradient(135deg, #74b9ff, #0984e3);}
+body.sunny { background: linear-gradient(135deg, #74b9ff, #0984e3);}
+body.rainy { background: linear-gradient(135deg, #636e72, #2d3436);}
+body.cloudy { background: linear-gradient(135deg, #b2bec3, #636e72);}
+body.snowy { background: linear-gradient(135deg, #ddd, #fff);}
+
+/* Contenedor principal */
+.container { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius:20px; padding:2rem; box-shadow:0 8px 32px rgba(0,0,0,0.1); border:1px solid rgba(255,255,255,0.2); text-align:center; max-width:400px; width:90%; position:relative; z-index:10;}
+
+/* Título */
+h1 { color:white; margin-bottom:1.5rem; font-size:2rem; text-shadow:0 2px 4px rgba(0,0,0,0.3); }
+
+/* Tarjeta de clima */
+.weather-card { background: rgba(255,255,255,0.2); border-radius:15px; padding:1.5rem; margin:1rem 0; border:1px solid rgba(255,255,255,0.3);}
+.weather-icon { font-size:4rem; margin-bottom:1rem; display:block;}
+.temperature { font-size:3rem; font-weight:bold; color:white; margin:0.5rem 0; text-shadow:0 2px 4px rgba(0,0,0,0.3);}
+.description { font-size:1.2rem; color:white; text-transform:capitalize; margin-bottom:1rem; text-shadow:0 1px 2px rgba(0,0,0,0.3);}
+
+/* Detalles del clima */
+.weather-details { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;}
+.detail-item { background: rgba(255,255,255,0.1); border-radius:10px; padding:1rem; color:white; }
+.detail-item i { font-size:1.2rem; margin-bottom:0.5rem; display:block;}
+.detail-label { font-size:0.9rem; opacity:0.8;}
+.detail-value { font-size:1.1rem; font-weight:bold;}
+
+/* Spinner */
+.loading { display:none; color:white; font-size:1.2rem; }
+.spinner { border:3px solid rgba(255,255,255,0.3); border-top:3px solid white; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:1rem auto; }
+@keyframes spin { 0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);} }
+
+/* Error */
+.error { display:none; color:#ff6b6b; background:rgba(255,107,107,0.1); padding:1rem; border-radius:10px; margin:1rem 0; border:1px solid rgba(255,107,107,0.3); }
+.retry-btn { background: rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.3); color:white; padding:0.8rem 1.5rem; border-radius:25px; cursor:pointer; margin-top:1rem; transition: background 0.3s;}
+.retry-btn:hover { background: rgba(255,255,255,0.3); }
+
+/* Selector de ciudad */
+#city-select { width:100%; padding:0.8rem; border-radius:25px; border:none; background: rgba(255,255,255,0.2); color:white; margin-top:1rem; text-align:center; backdrop-filter:blur(10px);}
+#city-select option { color:black; }
+.select-btn { background: rgba(255,255,255,0.2); border:1px soli
+}

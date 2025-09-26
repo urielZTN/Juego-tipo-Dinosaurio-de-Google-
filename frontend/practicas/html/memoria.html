@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Memoria</title>
+  <link rel="stylesheet" href="../css/memoria.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>🎴 Juego de Memoria</h1>
+    <p>Encuentra todas las parejas de cartas</p>
+  </header>
+
+  <!-- Estadísticas -->
+  <section class="stats">
+    <p>Intentos: <span id="attempts">0</span></p>
+    <p>Tiempo: <span id="time">0</span> s</p>
+  </section>
+
+  <!-- Tablero de juego -->
+  <main class="game-board"></main>
+
+  <!-- Controles -->
+  <section class="controls">
+    <button id="restart">🔄 Reiniciar</button>
+  </section>
+
+  <!-- Mensaje de victoria -->
+  <div id="victory" class="hidden">
+    <h2>🎉 ¡Ganaste!</h2>
+    <p>Completaste el juego en <span id="finalAttempts"></span> intentos y <span id="finalTime"></span> segundos.</p>
+    <button onclick="restartGame()">Jugar otra vez</button>
+  </div>
+
+  <script src="../javaScrip/memoria.js"></script>
+</body>
+</html>

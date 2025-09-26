@@ -1,0 +1,119 @@
+/* Fondo y estructura */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #333;
+}
+
+.stats {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff6b81;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Tablero */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Cartas */
+.card {
+  width: 100px;
+  height: 140px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.card-front {
+  background: white;
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  background: #ff6b81;
+  color: white;
+}
+
+/* Mensaje de victoria */
+#victory {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .game-board {
+    grid-template-columns: repeat(3, 90px);
+    grid-gap: 10px;
+  }
+  .card {
+    width: 90px;
+    height: 120px;
+  }
+}

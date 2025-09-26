@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e; /* Fondo azul oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #e4e4e4; /* Color de texto claro */
+}
+
+.card-container {
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1f1d36, #2a2542);
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 30px rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02) rotate(1deg);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5), -15px -15px 40px rgba(255, 255, 255, 0.08);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6c63ff; /* Borde morado */
+    box-shadow: 0 0 15px #6c63ff, 0 0 25px #6c63ff;
+    transition: all 0.4s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1) rotate(5deg);
+    border: 3px solid #ff6c6c; /* Cambio de color al hacer hover */
+}
+
+.name {
+    color: #e4e4e4;
+    margin-top: 15px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+.career {
+    color: #a0a0a0;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.description {
+    color: #b3b3b3;
+    line-height: 1.7;
+    font-weight: 200;
+}
+
+#toggleContact {
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+#toggleContact:hover {
+    background-color: #5b54d1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.6);
+}
+
+.contact-info {
+    margin-top: 25px;
+    padding: 15px;
+    border-top: 1px solid #333;
+    text-align: left;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.hidden {
+    display: none;
+}

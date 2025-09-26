@@ -1,0 +1,16 @@
+h1 {
+    color: darkred;
+}
+
+p {
+    color: darkblue;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+.destacado {
+    color: blue;
+    font-weight: bold;
+}
